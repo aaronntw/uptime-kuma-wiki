@@ -25,7 +25,7 @@ Now you can show different status pages based on the domain names.
 
     (⚠️ PS: For such as Apache or nginx, you need to forward the header `X-Forwarded-Host` or `Host` to Uptime Kuma, otherwise Uptime Kuma do not know the current domain name)
 
-3. Add a A/CNAME record for your domain name in your DNS management.
+3. Add a A/CNAME record for your domain name in your DNS management. If you are using Cloudflare Tunnel, add this domain name as a Public Hostname in the tunnel for Uptime Kuma instance.
 4. Add your domain name in your status page settings sidebar.
 
 This is my example, they both are from the same instance:
